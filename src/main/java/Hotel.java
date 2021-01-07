@@ -18,4 +18,14 @@ public class Hotel {
     public int conferenceRoomCount() {
         return this.conferenceRooms.size();
     }
+
+    public void addRoom(Bedroom bedroom) {
+        this.bedrooms.add(bedroom);
+    }
+
+//    public void checkInGuest(Guest guest, Bedroom bedroom) {
+//        if (bedroom.getCapacity() > bedroom.guestCount()){
+//            bedroom.guestsadd(guest);
+//        }
+//    }
 }

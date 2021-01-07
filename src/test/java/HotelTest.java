@@ -6,10 +6,14 @@ import static org.junit.Assert.assertEquals;
 public class HotelTest {
 
     Hotel hotel;
+    Bedroom bedroom;
+    Guest guest;
 
     @Before
     public void setUp(){
         hotel = new Hotel();
+        bedroom = new Bedroom(1, 2, RoomType.DOUBLE);
+        guest = new Guest("John");
     }
 
     @Test
@@ -21,4 +25,12 @@ public class HotelTest {
     public void hotelConferenceRoomsStartsEmpty(){
         assertEquals(0, hotel.conferenceRoomCount());
     }
+
+//    @Test
+//    public void canCheckInGuest(){
+//        hotel.addRoom(bedroom);
+//        hotel.checkInGuest(guest, bedroom);
+//        assertEquals(1, bedroom.guestCount());
+//        assertEquals(1, hotel.bedroomCount());
+//    }
 }
