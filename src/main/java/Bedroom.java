@@ -17,4 +17,8 @@ public class Bedroom {
     public int getRoomNumber() {
         return this.RoomNumber;
     }
+
+    public int getCapacity() {
+        return this.capacity;
+    }
 }
