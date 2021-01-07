@@ -21,4 +21,8 @@ public class Bedroom {
     public int getCapacity() {
         return this.capacity;
     }
+
+    public RoomType getRoomType() {
+        return type;
+    }
 }
