@@ -9,6 +9,7 @@ public class ConferenceRoom {
     public ConferenceRoom(String name, int capacity){
         this.name = name;
         this.capacity = capacity;
+        this.guests = new ArrayList<Guest>();
     }
 
     public String getConferenceRoomName() {
@@ -25,5 +26,9 @@ public class ConferenceRoom {
 
     public void setCapacity(int capacity) {
         this.capacity = capacity;
+    }
+
+    public int guestCount() {
+        return this.guests.size();
     }
 }
