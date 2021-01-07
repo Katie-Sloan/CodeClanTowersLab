@@ -14,4 +14,8 @@ public class ConferenceRoom {
     public String getConferenceRoomName() {
         return this.name;
     }
+
+    public int getCapacity() {
+        return this.capacity;
+    }
 }

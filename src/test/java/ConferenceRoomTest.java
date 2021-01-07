@@ -17,4 +17,9 @@ public class ConferenceRoomTest {
     public void canGetConferenceRoomName(){
         assertEquals("Winter", conferenceRoom.getConferenceRoomName());
     }
+
+    @Test
+    public void canGetCapacity(){
+        assertEquals(10, conferenceRoom.getCapacity());
+    }
 }
