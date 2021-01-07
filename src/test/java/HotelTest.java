@@ -13,7 +13,12 @@ public class HotelTest {
     }
 
     @Test
-    public void hotelStartsEmpty(){
+    public void hotelBedroomsStartsEmpty(){
         assertEquals(0, hotel.bedroomCount());
+    }
+
+    @Test
+    public void hotelConferenceRoomsStartsEmpty(){
+        assertEquals(0, hotel.conferenceRoomCount());
     }
 }

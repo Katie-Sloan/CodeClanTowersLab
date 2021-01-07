@@ -7,10 +7,15 @@ public class Hotel {
 
     public Hotel(){
         this.bedrooms = new ArrayList<Bedroom>();
+        this.conferenceRooms = new ArrayList<ConferenceRoom>();
 
     }
 
     public int bedroomCount() {
         return this.bedrooms.size();
+    }
+
+    public int conferenceRoomCount() {
+        return this.conferenceRooms.size();
     }
 }
