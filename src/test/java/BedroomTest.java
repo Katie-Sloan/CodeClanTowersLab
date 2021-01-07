@@ -26,4 +26,9 @@ public class BedroomTest {
     public void canGetRoomType(){
         assertEquals(RoomType.DOUBLE, bedroom.getRoomType());
     }
+
+    @Test
+    public void bedroomStartsEmpty(){
+        assertEquals(0, bedroom.guestCount());
+    }
 }
