@@ -23,9 +23,9 @@ public class Hotel {
         this.bedrooms.add(bedroom);
     }
 
-//    public void checkInGuest(Guest guest, Bedroom bedroom) {
-//        if (bedroom.getCapacity() > bedroom.guestCount()){
-//            bedroom.guestsadd(guest);
-//        }
-//    }
+    public void checkInGuest(Guest guest, Bedroom bedroom) {
+        if (bedroom.getCapacity() > bedroom.guestCount()){
+            bedroom.addGuest(guest);
+        }
+    }
 }
