@@ -39,4 +39,11 @@ public class BedroomTest {
         bedroom.addGuest(guest);
         assertEquals(1, bedroom.guestCount());
     }
+
+    @Test
+    public void removeGuest(){
+        bedroom.addGuest(guest);
+        bedroom.removeGuest(guest);
+        assertEquals(0, bedroom.guestCount());
+    }
 }
