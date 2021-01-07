@@ -15,7 +15,15 @@ public class ConferenceRoom {
         return this.name;
     }
 
+    public void setConferenceRoomName(String name) {
+        this.name = name;
+    }
+
     public int getCapacity() {
         return this.capacity;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
     }
 }

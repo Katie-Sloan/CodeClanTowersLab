@@ -18,11 +18,23 @@ public class Bedroom {
         return this.RoomNumber;
     }
 
+    public void setRoomNumber(int RoomNumber) {
+        this.RoomNumber = RoomNumber;
+    }
+
     public int getCapacity() {
         return this.capacity;
     }
 
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+
     public RoomType getRoomType() {
         return type;
+    }
+
+    public void setRoomType(RoomType type) {
+        this.type = type;
     }
 }
